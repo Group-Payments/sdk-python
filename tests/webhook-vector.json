@@ -1,0 +1,13 @@
+{
+  "_": "Backend webhook signature vector (webhooks.sign_headers with both secrets during rotation). Every SDK test verifies it; apps/api tests/e2e/test_sdk_smoke.py keeps it in sync with the backend.",
+  "secrets": [
+    "current-endpoint-secret",
+    "previous-endpoint-secret"
+  ],
+  "t": 1760000000,
+  "body": "{\"event\":\"payment.succeeded\",\"eventId\":\"7c0e1f7a-3a51-4c8e-9a52-1f1f0f6b2a10\",\"createdAt\":\"2030-01-01T00:00:00Z\",\"payment\":{\"id\":\"b3f0c2e4-1d2a-4f5b-8c6d-7e8f9a0b1c2d\",\"amount\":\"1490.00\",\"description\":\"Заказ №1042\",\"metadata\":{\"k\":\"v\"}}}",
+  "headers": {
+    "GP-Signature": "ecd7a0a449770f5bb1a55872afbed22f6f4273fe84c5154afafea680af96994e",
+    "GP-Signature-V2": "t=1760000000,v1=21c47aa57ab5df7f7f908ac0806ae48dfbed5e6bb8ba48f3ecf99671e720bac7,v1=4613a5e7f97dae28ecb6b65427661b691cd439c3331674c0672461e7614b17f1"
+  }
+}
